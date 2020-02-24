@@ -1,3 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 img {
   max-width: 100%;
+}
+
+body {
+  background: url(../img/background.png);
+}
+
+/* Header (logo + nav) */
+
+header {
+  position: fixed;
+  width: 72px;
+  height: 100vh;
+  box-shadow: 0 0 25px rgba(219, 219, 219, 0.5);
+}
+
+.logo {
+  position: absolute;
+  top: 16px;
+  left: 25px;
+}
+
+nav .header-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  height: 80vh;
+  width: 100%;
+  align-items: center;
+}
+
+.header-list li {
+  flex-grow: 2;
+}
+
+.header-list li:nth-last-child(1) {
+  flex-grow: 10;
+}
+
+.header-list li a {
 }
