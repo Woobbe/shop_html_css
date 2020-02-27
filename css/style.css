@@ -7,8 +7,13 @@ img {
   max-width: 100%;
 }
 
+/* Фон прижат к нижней границе видимой области, масштабируется по x+y, изображение отцентрировано */
 body {
   background: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 100%;
 }
 
 /* Header (logo + nav) */
@@ -17,6 +22,7 @@ header {
   position: fixed;
   width: 72px;
   height: 100vh;
+  background-color: #fff;
   box-shadow: 0 0 25px rgba(219, 219, 219, 0.5);
 }
 
@@ -27,23 +33,21 @@ header {
 }
 
 nav .header-list {
-  list-style: none;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 15%;
   height: 80vh;
   width: 100%;
   align-items: center;
+  position: absolute;
+  top: 15%;
+  list-style: none;
+  justify-content: ;
 }
 
 .header-list li {
-  flex-grow: 2;
+  margin-bottom: 45px;
 }
 
 .header-list li:nth-last-child(1) {
-  flex-grow: 10;
-}
-
-.header-list li a {
+  margin-top: auto;
 }
