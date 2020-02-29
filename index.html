@@ -31,9 +31,19 @@
     </header>
     <main>
       <h1 class="main-header">olios</h1>
-      <button class="main-menu">
-        <img src="./img/icons/menu_slash.png" alt="menu_slash" />
-      </button>
+      <input type="checkbox" id="menu" class="hidden-menu-ticker" />
+      <label class="btn-menu" for="menu">
+        <img src="./img/icons/menu_slash.png" alt="" />
+      </label>
+
+      <div class="hidden-menu-wrapper">
+        <label class="hidden-menu-overlay" for="menu"></label>
+        <ul class="hidden-menu">
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 2</a></li>
+          <li><a href="">Link 3</a></li>
+        </ul>
+      </div>
     </main>
   </body>
 </html>

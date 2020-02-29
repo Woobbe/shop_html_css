@@ -87,27 +87,77 @@ nav .header-list {
     forwards;
 }
 
-
 /* Menu-standart*/
-.main-menu {
+
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
   position: fixed;
   right: 25px;
   top: 25px;
   background: #fff;
   color: #0023ff;
   border: none;
+  border-radius: 50%;
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;
   box-shadow: 0 0 25px rgba(219, 219, 219, 0.5);
-}
-
-.main-menu:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  opacity: 0.9;
+  transition: left 0.23s;
+  z-index: 3;
+  text-align: center;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
 }
 
-.main-menu:focus {
-  outline: none !important;
+.btn-menu img {
+  margin-top: 13px;
+}
+
+.hidden-menu-wrapper {
+  width: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.hidden-menu {
+  display: block;
+  position: absolute;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 200px;
+  background-color: #fff;
+  height: 100%;
+  top: 0;
+  right: -200px;
+  transition: left 0.2s;
+  z-index: 3;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+  right: 160px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu-wrapper {
+  width: 100%;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu-wrapper .hidden-menu {
+  right: 0;
 }
