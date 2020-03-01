@@ -128,19 +128,43 @@ nav .header-list {
 .hidden-menu {
   display: block;
   position: absolute;
-  list-style: none;
-  padding: 10px;
+  text-align: center;
+  padding: 50px 10px 10px 10px;
   margin: 0;
   box-sizing: border-box;
   width: 200px;
-  background-color: #fff;
   height: 100%;
   top: 0;
   right: -200px;
   transition: left 0.2s;
   z-index: 3;
+  list-style: none;
+  background-color: #fff;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu li {
+  margin-bottom: 7%;
+  padding: 10px;
+
+}
+
+.hidden-menu a {
+  display: block;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  color: #0023ff;
+  cursor: pointer;
+}
+
+.hidden-menu a:hover{
+  transform: scale(1.15);
+}
+
+.hidden-menu a:active {
+  transform: scale(1);
 }
 
 .hidden-menu-overlay {
