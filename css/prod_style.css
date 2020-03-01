@@ -109,6 +109,14 @@ main {
   .main-items .main-items-wrapper__row-col {
     width: calc(100% / 12 * 6 - 30px);
   }
+
+  header {
+    position: fixed;
+  }
+
+  main {
+    margin-left: 72px;
+  }
 }
 
 @media screen and (max-width: 560px) {
