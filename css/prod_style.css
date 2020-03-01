@@ -2,34 +2,33 @@ body {
   background: #f0f0f0;
 }
 
-.products-main-products {
+main {
+  margin: 60px auto;
+}
+
+.products-main-header {
   display: flex;
-  max-width: 1150px;
-  margin: 0 auto;
+  max-width: 1100px;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 15px;
 }
 
-.products-main-products__header {
-  display: flex;
-  justify-content: space-between;
-  width: 1150px;
-  margin: 40px 0;
-}
-
-.products-main-products__header h1 {
+.products-main-header h1 {
+  display: inline-block;
   font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  flex-grow: 10;
+  flex-grow: 1;
 }
 
-.products-main-products__header-room {
+.products-main-header__room {
   display: flex;
   align-items: center;
 }
 
-.products-main-products__header-room p {
+.products-main-header__room p {
   color: #c1c1c1;
   font-size: 1rem;
   font-weight: 400;
@@ -38,3 +37,88 @@ body {
   margin-right: 5px;
 }
 
+/* --------------------items------------------------ */
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col {
+  margin: 15px;
+  box-sizing: border-box;
+}
+
+.subtitle {
+  text-transform: uppercase;
+}
+
+.job {
+  color: #3a3333c2;
+}
+
+.items {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.items .row {
+  justify-content: center;
+}
+
+.items .col {
+  width: calc(100% / 12 * 3 - 30px);
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 25px 15px rgba(219, 219, 219, 0.5);
+}
+
+.items .col img {
+  margin: 10px 0;
+  max-width: 90%;
+  align-self: center;
+}
+
+.items .col .subtitle {
+  font-size: 24px;
+  margin: 10px 0 20px;
+}
+
+.items .col .job {
+  margin: auto 10px 10px;
+}
+
+.items .col .buy {
+  background: #1e62fca1;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+@media screen and (max-width: 860px) {
+  .items .col {
+    width: calc(100% / 12 * 6 - 30px);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .items .col {
+    width: calc(100% / 12 * 12 - 30px);
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .products-main-header {
+    text-align: center;
+  }
+}
