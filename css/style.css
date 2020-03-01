@@ -45,7 +45,6 @@ nav .header-list {
   position: absolute;
   top: 15%;
   list-style: none;
-  justify-content: ;
 }
 
 .header-list li {
@@ -107,8 +106,6 @@ nav .header-list {
   transition: left 0.23s;
   z-index: 3;
   text-align: center;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
 }
 
 .btn-menu img {
@@ -140,8 +137,6 @@ nav .header-list {
   z-index: 3;
   list-style: none;
   background-color: #fff;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
   box-shadow: 0 0 25px 10px rgba(219, 219, 219, 0.5);
 }
 
