@@ -191,3 +191,9 @@ nav .header-list {
 .hidden-menu-ticker:checked ~ .hidden-menu-wrapper .hidden-menu {
   right: 0;
 }
+
+@media screen and (max-width: 400px) {
+  .main-header {
+    font-size: 70px;
+  }
+}
